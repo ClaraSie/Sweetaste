@@ -406,6 +406,7 @@ body {
   background-color: #EAF0ED;
   color: #3F5D45;
   border: 0;
+  border-radius: 0;
   -webkit-appearance: none;
   /*解决iphone safari上的圆角问题*/
   cursor: pointer;
@@ -557,8 +558,9 @@ footer .footer-container {
   color: #3F5D45;
   background-color: #FFE180;
   cursor: pointer;
-  border: 0;
+  border: 1px solid #FFE180;
   padding: 0;
+  margin: 0;
 }
 
 .input-group .submit span {

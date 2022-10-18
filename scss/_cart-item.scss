@@ -71,6 +71,7 @@
     background-color: $info;
     color: $primary;
     border: 0;
-    -webkit-appearance: none ;  /*解决iphone safari上的圆角问题*/    
+    border-radius: 0;
+    -webkit-appearance: none;  /*解决iphone safari上的圆角问题*/    
     cursor: pointer;
 }
