@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/product.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <title>Sweetaste*</title>
+</head>
+<body>
+    <!-- header navbar-->
+    <header class="container">
+        <nav class="navbar py-30">
+            <a href="#" class="ham-icon">
+                <i class="fas fa-bars"></i>
+            </a>
+            <a href="index.html"><div class="logo-all"></div></a>
+            <div class="flex-x">
+                <ul class="dropdown">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="product.html">甜點</a></li>
+                    <li><a href="login.html">登入</a></li>
+                </ul>
+                <a href="#" class="cart"><span class="material-icons">shopping_cart</span></a>
+            </div>           
+        </nav>
+    </header>
+    <!-- slider -->
+    <section class="slider">
+        <div class="container">
+            <img src="image/product-slide.jpg" alt="slide" class="banner">                
+        </div>
+    </section>
+    <!-- main -->
+    <section class="productOverview container">
+        <!-- menu -->
+        <ul class="listGroup">
+            <li>甜點類別</li>
+            <li class="active"><a href="#">所有甜點（48）</a></li>
+            <li><a href="#">本日精選（10）</a></li>
+            <li><a href="#">人氣推薦（26）</a></li>
+            <li><a href="#">新品上市（12）</a></li>
+        </ul>
+        <!-- cart-item -->
+        <ul class="cart-item">
+            <li>
+                <img src="image/item4.jpg" alt="">
+                <div class="tag">本日精選</div>
+                <span class="material-icons favorite">favorite_border</span>
+                <div class="cart-info">
+                    <div class="title">焦糖馬卡龍</div>
+                    <div class="price">NT$ 450</div>
+                </div>
+                <input type="button" class="cart-btn" value="加入購物車">
+            </li>
+            <li>
+                <img src="image/item1.jpg" alt="">
+                <div class="tag">本日精選</div>
+                <span class="material-icons favorite">favorite_border</span>
+                <div class="cart-info">
+                    <div class="title">焦糖馬卡龍</div>
+                    <div class="price">NT$ 450</div>
+                </div>
+                <input type="button" class="cart-btn" value="加入購物車">
+            </li>
+            <li>
+                <img src="image/item5.jpg" alt="">
+                <div class="tag">本日精選</div>
+                <span class="material-icons favorite">favorite_border</span>
+                <div class="cart-info">
+                    <div class="title">焦糖馬卡龍</div>
+                    <div class="price">NT$ 450</div>
+                </div>
+                <input type="button" class="cart-btn" value="加入購物車">
+            </li>
+            <li>
+                <img src="image/item6.jpg" alt="">
+                <div class="tag">本日精選</div>
+                <span class="material-icons favorite">favorite_border</span>
+                <div class="cart-info">
+                    <div class="title">焦糖馬卡龍</div>
+                    <div class="price">NT$ 450</div>
+                </div>
+                <input type="button" class="cart-btn" value="加入購物車">
+            </li>
+            <li>
+                <img src="image/item2.jpg" alt="">
+                <div class="tag">本日精選</div>
+                <span class="material-icons favorite">favorite_border</span>
+                <div class="cart-info">
+                    <div class="title">焦糖馬卡龍</div>
+                    <div class="price">NT$ 450</div>
+                </div>
+                <input type="button" class="cart-btn" value="加入購物車">
+            </li>
+            <li>
+                <img src="image/item7.jpg" alt="">
+                <div class="tag">本日精選</div>
+                <span class="material-icons favorite">favorite_border</span>
+                <div class="cart-info">
+                    <div class="title">焦糖馬卡龍</div>
+                    <div class="price">NT$ 450</div>
+                </div>
+                <input type="button" class="cart-btn" value="加入購物車">
+            </li>
+        </ul>
+    </section>
+    <!-- pagination -->
+    <nav aria-label="Page" class="container">
+        <ul class="pagination">
+            <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <span class="material-icons">arrow_left</span>
+            </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span class="material-icons">arrow_right</span>
+            </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- footer -->
+    <footer>
+        <ul class="mailme py-30">
+            <div class="footer-container mailme-inner">
+                <li class="title">
+                    <img src="image/logo-light.svg" alt="logo" class="logo">
+                    <p>訂閱你我的甜蜜郵件</p>
+                </li>
+                <li class="input-group">
+                    <span class="material-icons icon">email</span>
+                    <input type="email" name="email">
+                    <button class="submit">
+                        <span class="material-icons">arrow_forward</span>
+                    </button>
+                </li>
+            </div>
+        </ul>
+        <div class="footer-main py-30">
+            <div class="footer-container footer-content">
+                    <div class="left-side">
+                        <img src="image/logotype-lg-dark.svg" alt="logo" class="logo-lg-dark" width="171px" height="27px">
+                        <ul class="info">
+                            <li><p>07-1234-5678</p></li>
+                            <li><p>sweetaste@email.com</p></li>
+                            <li><p>800 高雄市新興區幸福路 520 號</p></li>
+                        </ul>
+                        <ul class="icon-group">
+                            <li>
+                                <img src="image/ic-line@.svg" alt="line@" width="32px">
+                            </li>
+                            <li>
+                                <img src="image/ic-facebook.svg" alt="facebook" width="32px">
+                            </li>
+                        </ul>
+                    </div>               
+                    <div class="right-side">
+                        <img src="image/sm-今天是個吃甜點的好日子.svg" alt="">
+                        <p>© 2018 Sweetaste* All Rights Reserved</p>
+                    </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
