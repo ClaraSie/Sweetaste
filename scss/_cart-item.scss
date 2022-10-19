@@ -47,13 +47,15 @@
 }
 .cart-info{
     max-width: 100%;
-    height: 56px;
     display: flex;
-    align-items: center;
-    text-align: center;
     font-size: $font-1;
     color: $primary;
-    border: 1px solid $info;
+    li{
+        border: 1px solid $info;
+        padding: 14px 0;
+        display: flex;
+        justify-content: center;
+    }
     .title{
         width: 57%;
     }
