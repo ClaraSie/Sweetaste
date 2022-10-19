@@ -114,6 +114,18 @@ body {
   }
 }
 
+@media (max-width: 414px) {
+  .memberLogin .left {
+    width: 100%;
+  }
+}
+
+@media (max-width: 414px) {
+  .memberLogin .right {
+    display: none;
+  }
+}
+
 .memberLogin .title {
   font-size: 2.25rem;
   background-color: #3F5D45;
@@ -267,12 +279,6 @@ body {
 @media (max-width: 414px) {
   .linkSocialMedia .socialMediaLogo img {
     width: 83px;
-  }
-}
-
-@media (max-width: 414px) {
-  .mediaDisplayNone {
-    display: none;
   }
 }
 
