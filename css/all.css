@@ -455,6 +455,7 @@ body {
   display: flex;
   font-size: 1.25rem;
   color: #3F5D45;
+  border: 1px solid #EAF0ED;
 }
 
 .cart-info li {
@@ -710,14 +711,14 @@ footer .footer-container {
           align-items: center;
 }
 
-.navbar .cart {
+.navbar .icon-cart {
   color: #3F5D45;
   padding-left: 49px;
   font-size: 1.5rem;
 }
 
 @media (max-width: 414px) {
-  .navbar .cart {
+  .navbar .icon-cart {
     padding-left: 0;
   }
 }

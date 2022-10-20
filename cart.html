@@ -7,7 +7,7 @@
     <meta name="format-detection" content="telephone=no" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/cart.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/navbar.js"></script>
     <title>Sweetaste*</title>
@@ -26,10 +26,106 @@
                     <li><a href="product.html">甜點</a></li>
                     <li><a href="login.html">登入</a></li>
                 </ul>
-                <a href="cart.html" class="cart"><span class="material-icons">shopping_cart</span></a>
+                <a href="cart.html" class="icon-cart"><span class="material-icons">shopping_cart</span></a>
             </div>           
         </nav>
     </header>
+    <section class="cart">
+        <div class="container cart-inner">
+            <ul class="cartLeft">
+                <li class="title">您的購物車</li>
+                <li class="cartDetail">
+                    <img src="image/item8.avif" alt="">
+                    <div class="cartContent">
+                        <div class="">
+                            <p class="cartProductName">焦糖馬卡龍</p>
+                            <p class="cartProductPrice">NT$ 450</p>
+                        </div>
+                        <ul class="cartProductCounter">
+                            <li id="minus">
+                                <button class="btn btn-white">-</button>
+                            </li>
+                            <li id="countnum">
+                                <input type="text" value="2">
+                            </li>
+                            <li id="plus">
+                                <button class="btn btn-white">+</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="totalPrice">NT$ 900</p>
+                    <span class="material-icons delete-icon">delete_outline</span>
+                </li>
+                <li class="cartDetail">
+                    <img src="image/item2.jpg" alt="">
+                    <div class="cartContent">
+                        <div class="">
+                            <p class="cartProductName">焦糖馬卡龍</p>
+                            <p class="cartProductPrice">NT$ 450</p>
+                        </div>
+                        <ul class="cartProductCounter">
+                            <li id="minus">
+                                <button class="btn btn-white">-</button>
+                            </li>
+                            <li id="countnum">
+                                <input type="text" value="2">
+                            </li>                            <li id="plus">
+                                <button class="btn btn-white">+</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="totalPrice">NT$ 900</p>
+                    <span class="material-icons delete-icon">delete_outline</span>
+                </li>
+                <li class="cartDetail">
+                    <img src="image/item5.jpg" alt="">
+                    <div class="cartContent">
+                        <div class="">
+                            <p class="cartProductName">焦糖馬卡龍</p>
+                            <p class="cartProductPrice">NT$ 450</p>
+                        </div>
+                        <ul class="cartProductCounter">
+                            <li id="minus">
+                                <button class="btn btn-white">-</button>
+                            </li>
+                            <li id="countnum">
+                                <input type="text" value="2">
+                            </li>                            <li id="plus">
+                                <button class="btn btn-white">+</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="totalPrice">NT$ 900</p>
+                    <span class="material-icons delete-icon">delete_outline</span>
+                </li>
+            </ul>
+            <ul class="cartRight">
+                <li class="">
+                    <p class="subtitle">訂單摘要</p>                  
+                </li>
+                <li class="content">
+                    <p>小計</p>
+                    <p>NT$ 2,700</p>
+                </li>
+                <li class="content">
+                    <p>運費</p>
+                    <p>NT$ 300</p>
+                </li>
+                <li class="cartTotal">
+                    <p>總計</p>
+                    <p>NT$ 3,000</p>
+                </li>
+                <li>
+                    <button class="btn btn-secondary">結帳</button>
+                </li>
+            </ul>
+
+
+        </div>
+        
+
+
+    </section>
 
 
 

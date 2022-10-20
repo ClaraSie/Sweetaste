@@ -1,7 +1,7 @@
 .navbar{
     @include flex-x;
 	align-items: center;
-    .cart{
+    .icon-cart{
         color: $primary;
         padding-left: 49px;
         font-size: $font-2;
@@ -37,8 +37,7 @@
         a{
             color: $primary;
         }
-    }
-    
+    }  
     @include mobile{
         position: absolute;
 		left: 0;
@@ -62,7 +61,6 @@
         }
     }
 }
-
 @include mobile{
     .dropdown.active{
         max-height: 240px;

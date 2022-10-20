@@ -512,14 +512,14 @@ footer .footer-container {
           align-items: center;
 }
 
-.navbar .cart {
+.navbar .icon-cart {
   color: #3F5D45;
   padding-left: 49px;
   font-size: 1.5rem;
 }
 
 @media (max-width: 414px) {
-  .navbar .cart {
+  .navbar .icon-cart {
     padding-left: 0;
   }
 }
@@ -622,18 +622,25 @@ footer .footer-container {
 }
 
 .btn {
-  padding: 16px 0;
   width: 100%;
   border: 0;
+  margin: 0;
   text-align: center;
   cursor: pointer;
 }
 
 .btn-secondary {
+  padding: 16px 0;
   color: #3F5D45;
   background-color: #FFE180;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.btn-white {
+  color: #3F5D45;
+  background-color: #FFFFFF;
+  font-weight: 300;
 }
 
 @media (max-width: 414px) {
