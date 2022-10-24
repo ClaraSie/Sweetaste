@@ -32,6 +32,7 @@
     </header>
     <section class="cart">
         <div class="container cart-inner">
+            <!-- 購物車清單 -->
             <ul class="cartLeft">
                 <li class="title">您的購物車</li>
                 <li class="cartDetail">
@@ -42,13 +43,13 @@
                             <p class="cartProductPrice">NT$ 450</p>
                         </div>
                         <ul class="cartProductCounter">
-                            <li id="minus">
+                            <li>
                                 <button class="btn btn-white">-</button>
                             </li>
-                            <li id="countnum">
+                            <li>
                                 <input type="text" value="2">
                             </li>
-                            <li id="plus">
+                            <li>
                                 <button class="btn btn-white">+</button>
                             </li>
                         </ul>
@@ -64,12 +65,13 @@
                             <p class="cartProductPrice">NT$ 450</p>
                         </div>
                         <ul class="cartProductCounter">
-                            <li id="minus">
+                            <li>
                                 <button class="btn btn-white">-</button>
                             </li>
-                            <li id="countnum">
+                            <li>
                                 <input type="text" value="2">
-                            </li>                            <li id="plus">
+                            </li>                            
+                            <li>
                                 <button class="btn btn-white">+</button>
                             </li>
                         </ul>
@@ -85,13 +87,14 @@
                             <p class="cartProductPrice">NT$ 450</p>
                         </div>
                         <ul class="cartProductCounter">
-                            <li id="minus">
-                                <button class="btn btn-white">-</button>
+                            <li>
+                                <button id="minus" class="btn btn-white qtyminus">-</button>
                             </li>
-                            <li id="countnum">
-                                <input type="text" value="2">
-                            </li>                            <li id="plus">
-                                <button class="btn btn-white">+</button>
+                            <li id="">
+                                <input type="text" value="2" id="countnum">
+                            </li>                            
+                            <li>
+                                <button id="plus" class="btn btn-white qtyplus">+</button>
                             </li>
                         </ul>
                     </div>
@@ -99,6 +102,7 @@
                     <span class="material-icons delete-icon">delete_outline</span>
                 </li>
             </ul>
+            <!-- 訂單摘要 -->
             <ul class="cartRight">
                 <li class="">
                     <p class="subtitle">訂單摘要</p>                  
@@ -116,20 +120,11 @@
                     <p>NT$ 3,000</p>
                 </li>
                 <li>
-                    <button class="btn btn-secondary">結帳</button>
+                    <a href="checkout1_ship.html"><button class="btn btn-secondary">結帳</button></a>
                 </li>
             </ul>
-
-
         </div>
-        
-
-
     </section>
-
-
-
-
     <!-- footer -->
     <footer>
         <ul class="mailme py-30">
