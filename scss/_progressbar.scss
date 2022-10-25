@@ -1,6 +1,6 @@
 /*progressbar*/
+/*https://codepen.io/designify-me/pen/qrJWpG*/
 #progressbar {
-    // margin-bottom: 30px;
     // overflow: hidden;
     /*CSS counters to number the steps*/
     counter-reset: step;
@@ -11,14 +11,11 @@
 #progressbar li {
     list-style-type: none;
     // color: white;
-    // text-transform: uppercase;
     // font-size: 9px;
     width: 33.33%;
     // float: left;
     position: relative;
-    // letter-spacing: 1px;
     display: flex;
-    // justify-content: space-between;
 }
 //圓
 #progressbar li:before {
@@ -31,7 +28,7 @@
     // font-size: 12px;
     // background: $primary;
     background: $primary;
-    border: 1px double $info;
+    border: 1px solid $info;
     border-radius: 50%;
     // margin: 0 auto;
     margin: 0;
@@ -58,11 +55,6 @@
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
 #progressbar li.active:before, #progressbar li.active:after {
-    // background: $info;
-    // border: 3px solid $primary; //圓內側框
-    // outline: 1px solid $info; //圓外框
-    // -webkit-appearance:none;
-    //new test
     background: $info;
     border: 3px solid $primary; //圓內側框
     box-shadow: 0 0 0 1px $info;  //圓外框

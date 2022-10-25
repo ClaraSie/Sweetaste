@@ -13,7 +13,7 @@
     }
     .right{
         width: 300px;
-        padding: 16px 20px;
+        margin-left: 20px;
         @include mobile{
             display: none;
         }
@@ -31,6 +31,38 @@
         font-size: $font-5;
         font-weight: 600;
         margin-bottom: 30px;
+    }
+}
+.right{
+    .subtitle{
+        padding: 16px 0;
+        font-size: $font-2;
+        font-weight: 600;
+        text-align: center;
+        color: $primary-light;
+        background-color: $info;
+    }
+    .right-content{
+        padding: 16px 20px;
+        line-height: $font-1;
+        color: $primary-light;
+        border: 1px solid $info;
+    }
+}
+.price-mark{
+    font-size: $font-1;
+    font-weight: 600;
+}
+.shoppingList{
+    li{
+        display: flex;
+        align-items: center;
+    }
+    img{
+        width: 120px;
+        height: 80px;
+        object-fit: cover;
+        margin-right: 20px;
     }
 }
 .row{
@@ -60,6 +92,7 @@
     display: flex;
     flex-wrap: wrap;
 }
+//select arrow icon setting / safari用appearance會看不到箭頭,需額外增加arrow icon
 select{
 	background: url(../image/unfold_more_primary_24dp.svg) no-repeat 95% 50%;
 	-moz-appearance: none; 

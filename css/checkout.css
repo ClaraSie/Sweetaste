@@ -110,7 +110,7 @@ body {
 
 .checkout-card .right {
   width: 300px;
-  padding: 16px 20px;
+  margin-left: 20px;
 }
 
 @media (max-width: 414px) {
@@ -135,6 +135,44 @@ body {
   font-size: 2.25rem;
   font-weight: 600;
   margin-bottom: 30px;
+}
+
+.right .subtitle {
+  padding: 16px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #8DA291;
+  background-color: #EAF0ED;
+}
+
+.right .right-content {
+  padding: 16px 20px;
+  line-height: 1.25rem;
+  color: #8DA291;
+  border: 1px solid #EAF0ED;
+}
+
+.price-mark {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.shoppingList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shoppingList img {
+  width: 120px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 20px;
 }
 
 .row label {
@@ -590,6 +628,7 @@ footer .footer-container {
 }
 
 /*progressbar*/
+/*https://codepen.io/designify-me/pen/qrJWpG*/
 #progressbar {
   /*CSS counters to number the steps*/
   counter-reset: step;
@@ -617,7 +656,7 @@ footer .footer-container {
   height: 20px;
   display: block;
   background: #3F5D45;
-  border: 1px double #EAF0ED;
+  border: 1px solid #EAF0ED;
   border-radius: 50%;
   margin: 0;
   z-index: 1;
