@@ -58,8 +58,12 @@
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
 #progressbar li.active:before, #progressbar li.active:after {
+    // background: $info;
+    // border: 3px solid $primary; //圓內側框
+    // outline: 1px solid $info; //圓外框
+    // -webkit-appearance:none;
+    //new test
     background: $info;
     border: 3px solid $primary; //圓內側框
-    outline: 1px solid $info; //圓外框
-    -webkit-appearance:none;
+    box-shadow: 0 0 0 1px $info;  //圓外框
 }

@@ -48,7 +48,8 @@
         background-color: $info;
         color: $primary-light;
         outline: none;
-        -webkit-appearance:none;
+        -webkit-appearance: none; 
+        border-radius: 0;
     }
     input[type="text"]::placeholder{
         color: $primary-light;
@@ -58,4 +59,12 @@
     width: 49%;
     display: flex;
     flex-wrap: wrap;
+}
+select{
+	background: url(../image/unfold_more_primary_24dp.svg) no-repeat 95% 50%;
+	-moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
+    cursor: pointer;
+    background-color: $info;
 }

@@ -153,6 +153,7 @@ body {
   color: #8DA291;
   outline: none;
   -webkit-appearance: none;
+  border-radius: 0;
 }
 
 .row input[type="text"]::-webkit-input-placeholder {
@@ -178,6 +179,15 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+select {
+  background: url(../image/unfold_more_primary_24dp.svg) no-repeat 95% 50%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background-color: #EAF0ED;
 }
 
 footer .footer-container {
@@ -634,7 +644,7 @@ footer .footer-container {
 #progressbar li.active:before, #progressbar li.active:after {
   background: #EAF0ED;
   border: 3px solid #3F5D45;
-  outline: 1px solid #EAF0ED;
-  -webkit-appearance: none;
+  -webkit-box-shadow: 0 0 0 1px #EAF0ED;
+          box-shadow: 0 0 0 1px #EAF0ED;
 }
 /*# sourceMappingURL=checkout.css.map */
