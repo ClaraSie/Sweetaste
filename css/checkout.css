@@ -152,6 +152,7 @@ body {
   background-color: #EAF0ED;
   color: #8DA291;
   outline: none;
+  -webkit-appearance: none;
 }
 
 .row input[type="text"]::-webkit-input-placeholder {
@@ -634,5 +635,6 @@ footer .footer-container {
   background: #EAF0ED;
   border: 3px solid #3F5D45;
   outline: 1px solid #EAF0ED;
+  -webkit-appearance: none;
 }
 /*# sourceMappingURL=checkout.css.map */

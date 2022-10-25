@@ -48,7 +48,7 @@
         background-color: $info;
         color: $primary-light;
         outline: none;
-        // -webkit-appearance:none;
+        -webkit-appearance:none;
     }
     input[type="text"]::placeholder{
         color: $primary-light;

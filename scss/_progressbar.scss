@@ -61,4 +61,5 @@
     background: $info;
     border: 3px solid $primary; //圓內側框
     outline: 1px solid $info; //圓外框
+    -webkit-appearance:none;
 }
