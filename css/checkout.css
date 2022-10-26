@@ -182,7 +182,7 @@ body {
   font-weight: 600;
 }
 
-.row input[type="text"], .row input[type="email"], .row .form-select {
+.row input[type="text"], .row input[type="tel"], .row input[type="email"], .row .form-select {
   width: 100%;
   font-size: 1rem;
   padding: 17px 20px;
