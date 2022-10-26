@@ -22,10 +22,12 @@
     background-color: $primary;
     font-weight: 600;
     font-size: $font-1;
+    // border: 1px solid $info;
 }
-.btn-info, .btn-primary:active{
+.btn-info{
     color: $primary;
     background-color: $info;
     font-weight: 600;
     font-size: $font-1;
+    // border: 1px solid $primary;
 }

@@ -58,21 +58,6 @@
         outline: 0;
     }
 }
-.form-check{
-    display: flex;
-    align-items: center;
-    input[type="checkbox"]{
-        width: 16px;
-        height: 16px;
-        margin-right: 8px;
-        cursor: pointer;
-    }
-    label {
-        cursor: pointer;
-        color: $info;
-        font-weight: 600;
-    }
-}
 .linkSocialMedia{
     padding: 40px 30px 24px 30px;
     background-color: $info;
