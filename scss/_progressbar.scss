@@ -1,6 +1,6 @@
 /*progressbar*/
 /*https://codepen.io/designify-me/pen/qrJWpG*/
-#progressbar {
+.progressbar {
     // overflow: hidden;
     /*CSS counters to number the steps*/
     counter-reset: step;
@@ -8,7 +8,7 @@
     align-items: flex-end;
 }
 
-#progressbar li {
+.progressbar li {
     list-style-type: none;
     // color: white;
     // font-size: 9px;
@@ -18,7 +18,7 @@
     display: flex;
 }
 //圓
-#progressbar li:before {
+.progressbar li:before {
     content: '';
     counter-increment: step;
     width: 20px;
@@ -36,9 +36,9 @@
 }
 //線
 /*progressbar connectors*/
-#progressbar li:after {
+.progressbar li:after {
     content: '';
-    width: 100%; 
+    width: 200%; 
     height: 1px;
     background: $info;
     position: absolute;
@@ -47,15 +47,36 @@
     top: 9px;
 }
 
-#progressbar li:first-child:after {
+.progressbar li:first-child:after {
     /*connector not needed before the first step*/
     content: none;
 }
 
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
-#progressbar li.active:before, #progressbar li.active:after {
+.progressbar li.active:before{
     background: $info;
     border: 3px solid $primary; //圓內側框
     box-shadow: 0 0 0 1px $info;  //圓外框
+}
+
+/* add */
+// 完成樣式V
+.progressbar li.checkOver:before{
+    font-family: "Font Awesome 5 Free"; 
+    content: '\f00c';
+    color: $primary;
+    font-size: $font;
+    background: $info;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+//第二個li置中顯示
+.progressbar li:nth-child(2):before{
+    margin: 0 auto;
+}
+//第三個li靠右顯示
+.progressbar li:last-child:before{
+    margin-left: auto; //靠右
 }

@@ -17,3 +17,15 @@
     background-color: $white;
     font-weight: 300;
 }
+.btn-primary{
+    color: $info;
+    background-color: $primary;
+    font-weight: 600;
+    font-size: $font-1;
+}
+.btn-info, .btn-primary:active{
+    color: $primary;
+    background-color: $info;
+    font-weight: 600;
+    font-size: $font-1;
+}

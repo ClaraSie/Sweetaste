@@ -182,7 +182,7 @@ body {
   font-weight: 600;
 }
 
-.row input[type="text"], .row .form-select {
+.row input, .row .form-select {
   width: 100%;
   font-size: 1rem;
   padding: 17px 20px;
@@ -194,19 +194,19 @@ body {
   border-radius: 0;
 }
 
-.row input[type="text"]::-webkit-input-placeholder {
+.row input::-webkit-input-placeholder {
   color: #8DA291;
 }
 
-.row input[type="text"]:-ms-input-placeholder {
+.row input:-ms-input-placeholder {
   color: #8DA291;
 }
 
-.row input[type="text"]::-ms-input-placeholder {
+.row input::-ms-input-placeholder {
   color: #8DA291;
 }
 
-.row input[type="text"]::placeholder {
+.row input::placeholder {
   color: #8DA291;
 }
 
@@ -226,6 +226,20 @@ select {
   appearance: none;
   cursor: pointer;
   background-color: #EAF0ED;
+}
+
+.creditcard-icon {
+  background: url(../image/credit_card_primary_24dp.svg) no-repeat 95% 50%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #EAF0ED;
+}
+
+.bill-btn {
+  height: 56px;
+  border: 1px solid #EAF0ED;
+  margin-bottom: 30px;
 }
 
 footer .footer-container {
@@ -585,6 +599,20 @@ footer .footer-container {
   font-weight: 300;
 }
 
+.btn-primary {
+  color: #EAF0ED;
+  background-color: #3F5D45;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.btn-info, .btn-primary:active {
+  color: #3F5D45;
+  background-color: #EAF0ED;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
 .flex-x {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -629,7 +657,7 @@ footer .footer-container {
 
 /*progressbar*/
 /*https://codepen.io/designify-me/pen/qrJWpG*/
-#progressbar {
+.progressbar {
   /*CSS counters to number the steps*/
   counter-reset: step;
   display: -webkit-box;
@@ -640,7 +668,7 @@ footer .footer-container {
           align-items: flex-end;
 }
 
-#progressbar li {
+.progressbar li {
   list-style-type: none;
   width: 33.33%;
   position: relative;
@@ -649,7 +677,7 @@ footer .footer-container {
   display: flex;
 }
 
-#progressbar li:before {
+.progressbar li:before {
   content: '';
   counter-increment: step;
   width: 20px;
@@ -663,9 +691,9 @@ footer .footer-container {
 }
 
 /*progressbar connectors*/
-#progressbar li:after {
+.progressbar li:after {
   content: '';
-  width: 100%;
+  width: 200%;
   height: 1px;
   background: #EAF0ED;
   position: absolute;
@@ -673,17 +701,41 @@ footer .footer-container {
   top: 9px;
 }
 
-#progressbar li:first-child:after {
+.progressbar li:first-child:after {
   /*connector not needed before the first step*/
   content: none;
 }
 
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
-#progressbar li.active:before, #progressbar li.active:after {
+.progressbar li.active:before {
   background: #EAF0ED;
   border: 3px solid #3F5D45;
   -webkit-box-shadow: 0 0 0 1px #EAF0ED;
           box-shadow: 0 0 0 1px #EAF0ED;
+}
+
+/* add */
+.progressbar li.checkOver:before {
+  font-family: "Font Awesome 5 Free";
+  content: '\f00c';
+  color: #3F5D45;
+  font-size: 1rem;
+  background: #EAF0ED;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progressbar li:nth-child(2):before {
+  margin: 0 auto;
+}
+
+.progressbar li:last-child:before {
+  margin-left: auto;
 }
 /*# sourceMappingURL=checkout.css.map */

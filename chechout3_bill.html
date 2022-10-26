@@ -35,52 +35,28 @@
         <div class="left">
             <ul class="left-content">
                 <li class="title">
-                    <h1>運送</h1>
+                    <h1>發票</h1>
                     <ul id="progressbar" class="progressbar row-fluid">
+                        <li class="checkOver"></li>
+                        <li class="checkOver"></li>
                         <li class="active"></li>
-                        <li></li>
-                        <li></li>
                     </ul>
                 </li>
-                <li class="row flex-x mb-16">
-                    <div class="row-fluid">
-                        <label for="lastname" class="mb-8">姓氏</label>
-                        <input type="text" id="lastname" placeholder="王">
-                    </div>
-                    <div class="row-fluid">
-                        <label for="firstname" class="mb-8">名字</label>
-                        <input type="text" id="firstname" placeholder="小明">
-                    </div>
+                <li class="flex-x bill-btn">
+                    <button class="btn btn-info">電子發票</button>
+                    <button class="btn btn-primary">郵寄發票</button>
                 </li>
                 <li class="row mb-16">
-                    <label for="phone" class="mb-8">電話</label>
-                    <input type="tel" id="phone" placeholder="0912-345-678">
+                    <label for="email" class="mb-8">電子郵件信箱</label>
+                    <input type="email" id="email" placeholder="example@email.com">
                 </li>
-                <li class="row flex-y">
-                    <label for="address" class="mb-8">地址</label>
-                    <div class="flex-x">
-                        <div class="row-fluid">
-                            <select class="form-select row-fluid mb-8" id="city">
-                                <option>請選擇</option>
-                                <option value="台北市">台北市</option>
-                                <option value="台中市">台中市</option>
-                                <option value="高雄市" selected>高雄市</option>
-                            </select>
-                        </div>
-                        <div class="row-fluid">
-                            <select class="form-select row-fluid mb-8" id="district">
-                                <option>請選擇</option>
-                                <option value="左營區">左營區</option>
-                                <option value="鼓山區">鼓山區</option>
-                                <option value="新興區" selected>新興區</option>
-                            </select>
-                        </div>
-                    </div>                   
-                    <input type="text" id="address" placeholder="幸福路 520 號">
+                <li class="row">
+                    <label for="commpanyNumber" class="mb-8">統一編號（選填）</label>
+                    <input type="number" id="commpanyNumber" placeholder="12345678">
                 </li>
             </ul>           
-            <a href="checkout2_payment.html">
-                <button class="btn btn-secondary">下一步</button>
+            <a href="#">
+                <button class="btn btn-secondary">確認結帳</button>
             </a>
         </div>
         <ul class="right">

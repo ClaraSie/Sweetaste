@@ -72,7 +72,7 @@
         color: $info;
         font-weight: 600;
     }
-    input[type="text"], .form-select{
+    input, .form-select{
         width: 100%;
         font-size: $font;
         padding: 17px 20px;
@@ -83,7 +83,7 @@
         -webkit-appearance: none; 
         border-radius: 0;
     }
-    input[type="text"]::placeholder{
+    input::placeholder{
         color: $primary-light;
     }
 }
@@ -92,7 +92,8 @@
     display: flex;
     flex-wrap: wrap;
 }
-//select arrow icon setting / safari用appearance會看不到箭頭,需額外增加arrow icon
+//select arrow icon setting 
+// safari用appearance會看不到箭頭,需額外增加arrow icon
 select{
 	background: url(../image/unfold_more_primary_24dp.svg) no-repeat 95% 50%;
 	-moz-appearance: none; 
@@ -100,4 +101,16 @@ select{
 	appearance: none;
     cursor: pointer;
     background-color: $info;
+}
+.creditcard-icon{
+	background: url(../image/credit_card_primary_24dp.svg) no-repeat 95% 50%;
+	-moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
+    background-color: $info;
+}
+.bill-btn{
+    height: 56px;
+    border: 1px solid $info;
+    margin-bottom: 30px;
 }

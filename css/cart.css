@@ -712,6 +712,20 @@ footer .footer-container {
   font-weight: 300;
 }
 
+.btn-primary {
+  color: #EAF0ED;
+  background-color: #3F5D45;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.btn-info, .btn-primary:active {
+  color: #3F5D45;
+  background-color: #EAF0ED;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
 .flex-x {
   display: -webkit-box;
   display: -ms-flexbox;
